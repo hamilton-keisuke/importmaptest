@@ -3,7 +3,14 @@
 <h1>Post</h1>
 
 <div id="posts">
-  <%= render @posts %>
+  <input class="search" placeholder="Search" />
+  <button class="sort" data-sort="title">
+    Sort by title
+  </button>
+
+  <ul class="list">
+    <%= render @posts %>
+  </ul>
 </div>
 
 <%= link_to "New post", new_post_path %>
